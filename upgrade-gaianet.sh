@@ -45,9 +45,6 @@ download_and_install() {
     tar -xzf "${BINARY_NAME}_${LATEST_VERSION}_Linux_x86_64.tar.gz"
     sudo mv "$BINARY_NAME" /usr/local/bin/
     sudo chmod +x /usr/local/bin/"$BINARY_NAME"
-
-    # Clean up
-    rm -f "${BINARY_NAME}_${LATEST_VERSION}_Linux_x86_64.tar.gz"
 }
 
 # Install or upgrade Gaianet Node
