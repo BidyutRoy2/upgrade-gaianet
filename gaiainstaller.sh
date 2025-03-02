@@ -129,7 +129,7 @@ echo "==============================================================="
         1|2|3)
             echo "Install Gaia-Node for VPS or Non-GPU Users..."
             rm -rf 1.sh
-            curl -O https://raw.githubusercontent.com/abhiag/Gaiatest/main/1.sh
+            curl -O https://github.com/BidyutRoy2/upgrade-gaianet/blob/main/1.sh
             chmod +x 1.sh
             ./1.sh
             ;;
@@ -220,11 +220,11 @@ echo "==============================================================="
                         echo "⚠️ No GPU detected on Desktop. Running Non-GPU version..."
                         script_name="gaiachat.sh"
                     fi
-                fi
+                fi 
 
                 # Start the chatbot in a detached screen session
                 screen -dmS gaiabot bash -c '
-                curl -O https://raw.githubusercontent.com/abhiag/Gaiatest/main/'"$script_name"' && chmod +x '"$script_name"';
+                curl -O https://raw.githubusercontent.com/BidyutRoy2/upgrade-gaianet/main/'"$script_name"' && chmod +x '"$script_name"';
                 if [ -f "'"$script_name"'" ]; then
                     ./'"$script_name"'
                 else
