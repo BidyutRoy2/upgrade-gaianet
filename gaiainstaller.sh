@@ -133,7 +133,7 @@ echo "==============================================================="
             rm -rf 1.sh
             curl -O https://github.com/BidyutRoy2/upgrade-gaianet/blob/main/1.sh
             chmod +x 1.sh
-            ./1.sh
+            sudo ./1.sh
             ;;
 
         4)
